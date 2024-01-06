@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // progam of grading system
+
+
+        var a=(Number(prompt("enetr your science subject marks")));
+        var b=(Number(prompt("enetr your math subject marks")));
+        var c=(Number(prompt("enetr your hindi subject marks")));
+        var d=(Number(prompt("enetr your english subject marks")));
+        var e=(Number(prompt("enetr your sst subject marks")));
+        let sub =a+b+c+d+e;
+
+        let avr=sub/5;
+
+
+
+        function total(){
+            //  sub=a+b+c+d+e;
+            console.log(sub," is total marks");
+        }
+
+        function grade(){
+
+
+            if(avr>100){
+                console.log("enter your valid marks")
+            }
+            else if(avr>=90 && avr<=100 ){
+
+                console.log("grade is a+" ,avr);
+            }
+            else if(avr>=80 && avr<90){
+                console.log("grade is a" ,avr);
+            }
+            else if(avr>=70 && avr<80){
+                console.log("grade is b" ,avr);
+            }
+            else if(avr>=60 && avr<70){
+                console.log("grade is c" ,avr);
+            }
+            else if(avr<60){
+                console.log("grade is d" ,avr);
+            }
+
+
+        }
+
+        
+        total();
+        grade();
+
+
+    </script>
+</body>
+</html>
