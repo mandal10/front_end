@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // what is variables ?
+        // A variables is a name of a memory location where data resides temporaily.
+        // variables are stored in RAM.
+
+        // javascript support dynamic typing.
+        // we need not specify datatypes of variables
+        // var x=10
+
+        // we can crete vaiables using:
+        // 1.var keyword
+        // 2.let keyword
+        // 3.const keyword
+
+        // var age=20;
+        //     age =30;
+        // console.log("age is",age);
+
+        // let age=20;
+        //     age =30;
+        // console.log("age is",age);
+
+        // difference between var and let
+        // using var we can redeclare the variables,but using let we cannot
+        // redeclare a variables.
+
+        // const= constant
+        // if we want to declare constant value,that means which cannot be changed
+        // then we use const keyword
+
+      const  name ="bapi"
+    //   name="amit";   generate error because const can't be modified
+      console.log("name is",name);
+
+      const gender="male"
+      console.log("gender is",gender);
+
+
+
+
+
+    //   Function in js
+
+    /*
+    What is function ?
+
+    A function is a block of code that we write to achieve reusability of code.
+
+    syntax of creating a function
+
+    function functionname (parameter list){
+        body function
+    }
+
+    */
+
+
+    function add (){
+        var a=Number(prompt("enter first number"));
+        var b=Number(prompt("enter second number"));
+        var c=a+b;
+        document.write("sum of a and b   ",c);
+        console.log("sum of a and b",c);
+
+
+    }
+
+    add();
+    add();
+
+
+        
+      
+
+    </script>
+</body>
+</html>
