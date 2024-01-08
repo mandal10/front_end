@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.Take values of length and breadth of a rectangle from user and check if it is square or not.
+
+        // let length=Number(prompt("enter your rectangle length value"));
+        // let breadth=Number(prompt("enter your rectangle breadth value"));
+
+        // if(length==breadth || breadth==length){
+
+        //     console.log("it is square");
+        // }else{
+        //     console.log ("it is rectangle");
+        // }
+
+        // <----------------------------------------------------------->
+
+
+
+        // 2.A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+        //  Ask user for their salary and year of service and print the net bonus amount.
+
+        //   let salary=Number(prompt("enter your salary"));
+        //   let year=Number(prompt("enter your year of service"));
+
+        //   let bonus=1;
+        //   let total=0;
+
+        //   if(year>5){
+        //     bonus=salary*0.05
+        //     total=bonus+salary
+
+        //     console.log(`congratulation are eligible for bonus ${total}`)
+        //   }
+        //   else {
+        //     console.log("sorry ! you are not eligible for bonus")
+        //   }
+
+
+        // <----------------------------------------------------------->
+
+
+        // 3.A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+        // Ask user for quantity
+        // Suppose, one unit will cost 100.
+        // Judge and print total cost for user.
+
+        // let quantity = Number(prompt("enter your purchase quantity of items"));
+        // let unit = 100;
+        // let total = quantity * unit
+
+
+        // if (total > 1000) {
+        //     let discount = total * 0.1
+        //     let totaldiscount = total - discount
+        //     console.log(`you have purchase ${total} and discount ${discount} total amount is ${totaldiscount}`)
+        // }
+        // else {
+        //     console.log(`you have purchased so much low `);
+        // }
+
+
+        // <----------------------------------------------------------->
+
+
+        // 4.A school has following rules for grading system:
+        // a. Below 25 - F
+        // b. 25 to 45 - E
+        // c. 45 to 50 - D
+        // d. 50 to 60 - C
+        // e. 60 to 80 - B
+        // f. Above 80 - A
+
+        //   let marks=Number(prompt("enter your marks"));
+
+        //   if(marks>100){
+        //     console.log("enter your right marks");
+        //   }
+        //   else if(marks<=100 && marks>80){
+        //     console.log("your grade is A");
+        //   }
+        //   else if(marks<=80 && marks>60){
+        //     console.log("your grade is B");
+        //   }
+        //   else if(marks<=60 && marks>50){
+        //     console.log("your grade is C");
+        //   }
+        //   else if(marks<=50 && marks>45){
+        //     console.log("your grade is D");
+        //   }
+        //   else if(marks<=45 && marks>25){
+        //     console.log("your grade is E");
+        //   }
+        //   else if(marks<=25){
+        //     console.log("your grade is f");
+        //   }
+
+        // <----------------------------------------------------------->
+
+
+
+        // 5.Take input of age of 3 people by user and determine oldest and youngest among them.
+
+
+        // let man1=Number(prompt("enter your age "));
+        // let man2=Number(prompt("enter your age "));
+        // let man3=Number(prompt("enter your age "));
+
+
+        // if(man1>man2){
+        //     if(man1>man3){
+        //         console.log (" the first man is oldest  ",man1)
+        //     }
+        // }
+        // else if(man2>man1){
+        //     if(man2>man3){
+        //         console.log("the second man is oldest",man2)
+        //     }
+        // }
+        // else {
+        //     console.log("the third man is oldest among them",man3)
+        // }
+
+
+
+        // if(man1<man2){
+        //     if(man1<man3){
+        //         console.log (" the first man is yongest  ",man1)
+        //     }
+        // }
+        // else if(man2<man1){
+        //     if(man2<man3){
+        //         console.log("the second man is yongest",man2)
+        //     }
+        // }
+        // else {
+        //     console.log("the third man is youngest among them",man3)
+        // }
+
+
+
+        // <----------------------------------------------------------->
+
+
+
+        // 6.Write a program to print absolute vlaue of a number entered by user. E.g.-
+        // INPUT: 1        OUTPUT: 1
+        // INPUT: -1        OUTPUT: 1
+
+        // var num = Number(prompt("enter your number"));
+
+        // var userTypeValue = Math.abs(num);
+        // console.log(`num value is ${num} user Type  Value is ${userTypeValue}`);
+
+
+        // <----------------------------------------------------------->
+
+
+        // 7.A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+        // Take following input from user
+        // Number of classes held
+        // Number of classes attended.
+        // And print
+        // percentage of class attended
+        // Is student is allowed to sit in exam or not.
+
+        // let heldClass=Number(prompt("enter number of class held"));
+        // let attendClass=Number(prompt("enter number of class attended"));
+
+        // let percentage=( attendClass/heldClass )*100;
+
+        // if(percentage>=75){
+        //     console.log(`you can sit in the exam ${percentage}`)
+        // }else{
+        //     console.log(`you can't sit in the exam ${percentage}`)
+        // }
+
+
+        // <----------------------------------------------------------->
+
+
+
+        // 8.Modify the above question to allow student to sit if he/she has medical cause. Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly.
+
+
+        // let heldClass = Number(prompt("enter number of class held"));
+        // let attendClass = Number(prompt("enter number of class attended"));
+
+        // let m=prompt("do you have medical yes / no")
+        // let medical=["yes","no"];
+
+        // let percentage = (attendClass / heldClass) * 100;
+
+        // if (percentage >= 75) {
+        //     console.log(`you can sit in the exam ${percentage}`)
+        // }else if(percentage<75){
+        //     if(medical=="yes"){
+        //         console.log("you are allowed to sit exam because you have medical report")
+        //     }else if(medical=="no"){
+
+        //         console.log("you are not allowed sit in the exam because you don't have medical report")
+        //     }
+        // }
+        // else {
+        //     console.log(`you can't sit in the exam ${percentage}`)
+        // }
+
+
+
+        // <----------------------------------------------------------->
+
+        //  9. Write a program to check if a year is leap year or not.
+        // If a year is divisible by 4 then it is leap year but if the year is century year like 2000, 1900, 2100 then it must be divisible by 400.
+
+
+        // let year=Number(prompt("enter your year to check it leap year or not"));
+
+        // if(year%400==0 && year%100==0){
+        //     console.log("it is leap year")
+        // }
+        // else if(year%100!=0 && year%4==0){
+        //     console.log("it is leap year")
+        // }
+        // else{
+        //     console.log("it is not leap year");
+        // }
+
+
+        // <----------------------------------------------------------->
+
+        // question 10.
+
+
+        // var gender=prompt("enter your gender");
+        // var age=Number(prompt("enter your age"));
+
+        // if(gender=="female"){
+        //     console.log("you can only work on urban areas");
+
+        // }
+        // else if(gender=="male"){
+        //     if(age>=20 && age<=40){
+        //         console.log("you can work anywhere")
+        //     }
+        //     else if(age>40 && age<=60){
+        //        console.log("you can work only urban areas (male)")
+        //     }
+        //     else{
+        //         console.log("error")
+        //     }
+        // }
+
+
+        // <----------------------------------------------------------->
+
+        //   11.A 4 digit number is entered through keyboard. Write a program to print a new number with digits reversed as of orignal one. E.g.-
+        // INPUT : 1234        OUTPUT : 4321
+        // INPUT : 5982        OUTPUT : 2895
+
+        // var user=["apple","banna","mango"];
+        // user.reverse();
+        // console.log(user);
+
+        // let num = Number(prompt('Enter Number'));
+        // let rem,rev = 0;
+        // while(num > 0) {
+        //     rem = num % 10;
+        //     rev = rev*10 + rem;
+        //     num = Math.floor (num/10);
+
+        // }
+        // console.log(rev);
+
+
+
+
+
+
+        // <----------------------------------------------------------->
+
+        // 12. Write a js program that will check for the following conditions:
+        // If the light is green – Car is allowed to go
+        // If the light is yellow – Car has to wait
+        // If the light is red – Car has to stop
+        // Other signal – unrecognized signal. Example black, blue, etc…
+
+        // let color=prompt("please choose one signal colour yellow,green and red");
+
+        // if(color=="green"){
+        //     console.log ("car is allowed to go")
+        // }
+        // else if(color=="yellow"){
+        //     console.log("car has to wait")
+        // }
+        // else if(color=="red"){
+        //     console.log("car has to stop");
+        // }
+        // else(
+        //     console.log("unrecognized signal ! please enter you right color")
+        // )
+
+
+        // <----------------------------------------------------------->
+
+
+
+
+
+        //    13. Write a program to trace your subject mark. Your program should fulfill the following conditions:
+        // If the subject mark is below 0 and above 100, print “error: mark should be between 0 and 100 only”
+        // Students will fail in the subject if their mark is below 50.
+        // Students will pass in the subject if they score 50 and above.
+        // If subject mark is between 50 and 60, grade student as good.
+        // If subject mark is between 60 and 80, grade student as very good.
+        // If subject mark is between 80 and 100, grade student as outstanding.
+        // Make sure to print their mark in every statement to prove that the condition is fulfilled.
+
+        // let mark=Number(prompt("enter your marks"));
+        // if(mark>100){
+        //     console,log("error ! please enter right marks")
+        // }else if(mark<=100 && mark>80){
+        //     console.log(`your marks is ${mark} it is outstanding marks`)
+        // }
+        // else if(mark<=80 && mark>60){
+        //     console.log(`your marks is ${mark} very good marks`)
+        // }
+        // else if(mark<=60 && mark>50){
+        //     console.log(`your marks is ${mark} good  marks`)
+        // }
+        // else if(mark<=50 ){
+        //     console.log(`your marks is ${mark} you are fail`)
+        // }
+
+
+
+
+
+        // <----------------------------------------------------------->
+
+        // 14. Write a program to check whether the number is of one digited or two digited or three digited or more than three digited.
+
+
+        
+        // var number = Number(prompt("Enter a number:"));
+
+        // if (number >= 0 && number < 10) {
+        //     console.log("The number is one-digit.");
+        // } 
+        // else if (number >= 10 && number < 100) {
+        //     console.log("The number is two-digit.");
+        // } 
+        // else if (number >= 100 && number < 1000) {
+        //     console.log("The number is three-digit.");
+        // }
+        //  else if (number >= 1000) {
+        //     console.log("The number has more than three digits.");
+        // } 
+        // else {
+        //     console.log("Invalid input. Please enter a valid number.");
+        // }
+
+
+
+
+        // <----------------------------------------------------------->
+
+        // 15.Write a program to check whether the given character is an uppercase letter or lowercase letter or a digit or a special character.
+        let upper=[,"B","C","D",,"F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"];
+
+        let lower=["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"];
+
+        let num=["1","2","3","4","5","6","7","8","9","0"];
+
+        let special=["!","@","#","$","%","^","&","*","~","`"];
+
+        let upperVowel=["A","E","I","O","U"];
+
+        let lowerVowel=["a","e","i","o","u"];
+
+         let value=prompt("enter your value to check UPPERCASE , lowercae ,number , lower case vowel,uppercase vowel, special character");
+
+        if(upper.includes(value)){
+            console.log(value,"it is uppercase");
+        }
+        else if(lower.includes(value)){
+            console.log(value,"it is lowercase");
+
+        }
+        else if(num.includes(value)){
+            console.log(value,"it is number");
+
+        }
+        else if(special.includes(value)){
+            console.log(value,"it is special character");
+
+        }
+        else if(upperVowel.includes(value)){
+            console.log(value,"it is upper case vowel");
+
+        }
+        else if(lowerVowel.includes(value)){
+            console.log(value,"it is  lower case vowel");
+
+        }else{
+            console.log("enter your character");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
