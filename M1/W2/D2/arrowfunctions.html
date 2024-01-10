@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arrow functions
+        // add 2 numbers using function
+
+    //     function add(a,b){
+    //        let c=a+b;
+
+    //         return c
+    //     }
+    //    console.log( add(3,7));
+
+
+    //    let res=add(20,90);
+    //    console.log("result is",res);
+
+
+
+    /*syntax of arrow function
+    var /let/const fname=()=>{
+        body of function
+    }
+
+    if function has only one statement ,then we can skip {}
+    also there is no need of return keyword if there's one statement
+        */
+
+        // const add=(a,b)=>{
+            // console.log("arrow function");
+            // return a+b 
+        // }
+
+
+        // const add=(a,b)=>a+b
+        // console.log(add(2,5));
+
+        // names array= lenght print
+
+    //     const names=["bapi","soumya","yogesh","rahul","hemant"];
+    //    let x= names.map(function(element,index){
+    //         // console.log(element," ",element.length);
+    //         return element.length;
+    //     })
+    //     console.log(x);
+
+
+
+    // const names=["bapi","soumya","yogesh","rahul","hemant"];
+    //    names.forEach((element,index)=>console.log(element,element.length));
+
+
+    //    array short
+    //    let ar=["hemant" "bapr" "rahul"];
+    //    let ar=[1,5,6,2,3,21,31,22,66];
+    // //    ar.sort((a,b)=>a>b ? -1: 1);
+    //    ar.sort((a,b)=>a>b ? 1: -1);
+
+    //    console.log(ar);
+
+    // //    searching in array
+    //    console.log("is 21 present",ar.insludes(21));
+    //    console.log("is 500 present",ar.insludes(500));
+
+
+
+    //    search in array with user input
+     var arr = [];
+
+        var num = Number(prompt("Enter number of elements in array"));
+        for (let i = 0; i < num; i++) {
+            let y = Number(prompt("enter your data"));
+            arr.push(y);
+        }
+        console.log(arr);
+
+        let search=Number(prompt("which one number you wanna search"));
+
+        console.log(arr.includes(search) ,search);
+
+        
+       
+        
+
+    </script>
+</body>
+</html>

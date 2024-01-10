@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // syntax of reduce =(single output)
+        /*
+        arrayname.reduce((a,b)=>{
+            body of function
+        })
+        
+        */
+
+        // wap to add elements of an array
+
+        // let ar = [3, 6, 7, 8, 9, 12];
+        // console.log("array is ", ar)
+        // let sum = ar.reduce(function (a, b) {
+        //     // console.log("a =",a,"b =",b);
+        //     return a + b
+
+        // })
+        // console.log("sum is", sum);
+
+
+        // 1.write a program to find maximum value of an array
+        // ?: = ternary oprator ,conditional operator.
+
+        // let ar1=[ 3,6,7,8,90,9,12];
+        // let max=ar1.reduce(function(a,b){
+        //     return a>b ? a:b;
+        // })
+        // console.log("max is ",max);
+
+
+        // 2.write a program to find minimum value of an array
+
+        // let ar1=[ 3,6,7,8,90,9,12];
+        // let min=ar1.reduce(function(a,b){
+        //     return a<b ? a:b;
+        // })
+        // console.log("min is ",min);
+
+
+        // 3. array user input[1,4,8,9]
+        // array square[1,16,64,81]
+        // square greater than 50 =[64,81]
+        // array sum of square=[145]
+
+        let num = Number(prompt("enter your digit"));
+        let arr1 = []
+         
+        for (let i = 1; i <= num; i++) {
+            let num1 = Number(prompt("enter tour data"));
+            arr1.push(num1);
+        }
+        console.log(arr1);
+
+
+        let square = arr1.map(function (element, index) {
+            //console.log("element", element, "index",index);
+            return element ** 2;
+        } );
+        console.log(square);
+
+
+        let largest = square.filter(function (element, index) {
+           return element >50;
+        });
+        console.log(largest);
+    
+
+        let sum = largest.reduce(function (a,b) {
+            // console.log("a =",a,"b =",b);
+            return a+b;
+        })
+        console.log("sum is", sum);
+
+
+        // let sumOfSquare = square.reduce(function (a,b) {
+        //     return a+b ;
+        // });
+        // console.log( "sum of square is",sumOfSquare);
+
+
+
+    </script>
+</body>
+
+</html>
