@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // write a program to find second largest
+        // element of an array
+
+        let ar = [2, 4, 5, 1, 8, 9, ];
+        for (let i = 0; i < ar.length; i++) {
+            for (let j = i + 1; j < ar.length; j++) {
+                if (ar[i] < ar[j]) {
+                    let c = ar[i];
+                    ar[i] = ar[j];
+                    ar[j] = c;
+                }
+                console.log(ar[i],ar[j])
+                
+            }
+        }
+        console.log( ar);
+        console.log("first largest",ar[0]);
+        console.log("second largest",ar[1]);
+        console.log("third largest",ar[2]);
+        console.log("fourth largest",ar[3]);
+
+
+    </script>
+</body>
+
+</html>
