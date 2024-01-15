@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let ar=[4][6];
+
+      
+        // let ar=new array(3); 3 is length of array
+        // let ar=new array(3,8,9);  //3,8,9 are element of array
+        // console.log(ar);
+        // console.table(ar);
+
+        // arrayLength? : number |undefined
+
+        // 2 rows and / 2 columns array
+
+        // let ar=[[3,5],[7,8]];
+        // console.log(ar);
+        // console.log(ar[0]);
+        // console.log(ar[1]);
+
+         // console.log(ar[0],[0]);
+        // console.log([0],[1]);
+
+        // create a 4*3 array
+        //  let arr1=[[1,2,3],[9,4,5],[4,6,7],[1,8,9]];
+        //  console.log(arr1);
+        // console.log(arr1[0]);
+        // console.log(arr1[1]);
+        // console.log(arr1[2]);
+        // console.log(arr1[3]);
+
+         // // i=row
+        // // j=column
+        // console.log("length is",arr1.length);
+        // for(let i=0;i<arr1.length; i++){
+
+        //     for(let j=0; j<arr1[0].length;j++){
+        //         console.log(arr1[i][j]);
+        //     }
+        // }
+
+
+
+       
+
+        // to access a particular data
+        // arrayname [rowindex][colindex]
+
+        // jagged array
+        // let arr2=[
+        //     [1,5,6],
+        //     [8,9,2],
+        //     [5,7],
+        //     [3]
+        // ]
+        // console.log(arr2);
+        // console.log(arr2[0][2]);
+        // console.log(arr2[3][2]);
+
+        // loop in 2*2 array
+
+        // let x=[[4,6],[7,8]];
+        // // i=row
+        // // j=column
+        // for(let i=0;i<2; i++){
+
+        //     for(let j=0; j<2;j++){
+        //         console.log(x[i][j]);
+        //     }
+        // }
+
+
+
+        // let x=[[4,6],[7,8]];
+        // // i=row
+        // // j=column
+        // console.log("length is",x.length);
+        // for(let i=0;i<x.length; i++){
+
+        //     for(let j=0; j<x[0].length;j++){
+        //         console.log(x[i][j]);
+        //     }
+        // }
+
+
+        // user input in 2-d array  2*2
+        // take an empty  array
+        // let x=[];
+        // let sum=0;
+        // var rows=Number(prompt("enter number of rows"));
+        // var cols=Number(prompt("enter number of cols"));
+        // for(let i=0; i<rows; i++){
+        //     x[i]=[]
+        //     for(let j=0; j<cols; j++){
+        //         x[i][j]=Number( prompt("enter data"));
+        //         sum=sum+x[i][j];
+
+        //     }
+        // }
+        // console.log(sum);
+
+        // console.log("your array is");
+
+        // for(let i=0;i<rows; i++){
+
+        //     for(let j=0; j<cols;j++){
+        //         console.log(x[i][j]);
+        //     }
+        // }
+
+
+        // homework
+        // find transpose of an array
+        // 3 4
+        // 5 6
+
+        // answer
+        // 3 5
+        // 4 6
+
+
+         let x=[[3,4],[5,6]];
+         let y=[];
+        // i=row
+        // j=column
+        console.log("length is",x.length);
+        for(let i=0;i<x.length; i++){
+
+            for(let j=0; j<x[0].length;j++){
+                // y.push(x[j][i]);
+                // console.log(x[j][i]);
+                document .write(x[j][i])
+            }
+            document.write("</br>")
+
+        }
+        // console.log(y);
+
+
+
+
+
+
+
+
+
+
+       
+
+    </script>
+</body>
+</html>
