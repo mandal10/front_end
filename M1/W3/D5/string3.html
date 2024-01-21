@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // print ascii code of each character
+        // let numcount=0;
+
+        // let str="javscript5432";
+        // let ar=str.split("");
+        // ar.forEach(function(element,index){
+        //     // console.log(element,str.charCodeAt(index));
+        //     let code=str.charCodeAt(index)
+        //     if(code>=47 && code<=57){
+        //         numcount++;
+        //     }
+        // })
+        // console.log("numcount is",numcount);
+
+
+        // convert the string to uppercase
+
+        //     let s="javascript";
+        //    x= s.toUpperCase();
+        //     console.log(x);
+
+        // convert the string to lowercase
+
+        // let s1="JAVASCRIPT";
+        // s1=s1.toLowerCase();
+        // console.log(s1);
+
+
+        //     let s2="javascript";
+        //     // =Javascript
+
+        //     console.log(s2.slice(0,2).toUpperCase()+s2.slice(2).toLowerCase());
+
+        //     let ar=["bapi","is","intelligent"];
+        //    ar.forEach(function(element,index){
+        //     let x=
+        //     console.log(element[0].toUpperCase()+element.slice(1).toLowerCase());
+        //    });
+
+        // print each element of array with its length
+        // let fruits = ["apple", "mango", "grapes", "kiwi"];
+
+        // fruits.forEach(function (element, index) {
+        //     console.log(element, "contains", element.length, "character");
+        // });
+
+        // Q.1 separate numberic data and text data from an array
+
+        let arr = [1, 2, "abc", "def", 4];
+
+        // num=[1,2,4];
+        // text=["abc","def"];
+        let num = [];
+        let text = [];
+        arr.forEach(function (element, index) {
+          if (typeof element==="number") {
+                num.push(element);
+            }
+            else {
+                text.push(element);
+            }
+        })
+        console.log(num);
+        console.log(text);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

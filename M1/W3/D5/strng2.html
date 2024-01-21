@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // split function
+        // let s= "yogesh kumar";
+        // let x= s.split(" ");
+        // console.log("after split", x);
+
+        // // count number of words and characters ina string
+
+        // let character =s.length;
+        // console.log("total character in a string",character);
+
+        // let words=x.length;
+        // console.log("total words in a string",words);
+
+        // find number of characters in a string without including space.
+
+      /*  let str= "bapi is intelligent";
+        console.log(str.length);
+        let count=0;
+        for(let i of str){
+            if(i !=" "){
+
+                count++;
+            }
+        }
+        console.log(count);*/
+
+        // count number in a vowel in a string
+
+     /*   let vowels = ["a","e","i","o","u"];
+        let str="javascript";
+        let count=0;
+
+        for(let i of str){
+            if(vowels.includes(i)){
+                count++;
+            }
+        }
+        console.log("number or vowels",count);
+        */
+
+        // codePointAt function
+        // return ascii code of character at specified index
+        // let str2="abcd";
+        // console.log(str2.codePointAt(0));
+
+        // console.log(str2.charAt(0));
+        // console.log(str2[0]);
+
+
+        // Q. count number of vowels,consonant,number.
+        let x="abcd123e3";
+        // v=1
+        // c=3
+        // n=3
+
+      let vowels = ["a","e","i","o","u"];
+      let num=["1,2,3,4,5,6,7,8,9,0"];
+      let cons=["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"];
+     
+        let count=0;
+        let n=0;
+        let c=0;
+        for(let i of x){
+            if(vowels.includes(i)){
+                count++;
+            }
+            else if(num.includes(i)){
+                n++;
+            }
+            else if(cons.includes(i)){
+                c++
+            }
+        }
+        console.log("number of vowels",count);
+        console.log("number of number",n);
+        console.log("number of consonant",c);
+
+     
+
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
