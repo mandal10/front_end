@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q.1
+        // let arr=[1,3,6,5];
+        // let missing=[];
+        // for(let i=1; i<=arr.length; i++){
+        //    if(!arr.includes(i)){
+        //     missing.push(i);
+            
+        //    }
+        // }
+        // console.log("the missing number is",missing);
+
+        // Q.2
+        // let arr=[11,6,23,7,3,6,8];
+        // // output = 15;
+        // let ans=15;
+
+        // for(let i=0; i<arr.length;i++){
+        
+         
+           
+        // }
+
+
+        // Q.3 write a javascript program that accepts a number as input ans inserts dashes(-)between each even number.
+        // example 025468
+        // output should 0-254-6-8
+
+        let s="025468"
+        let result="";
+        for(let i of s){
+            if(i% 2==0){
+
+                result=result+i+"-";
+            }
+            else{
+                result=result+i
+            }
+        }
+
+        let res=result.slice(0,3)+result.slice(4,10);
+        console.log(res);
+
+        
+
+
+
+
+   
+
+        
+
+    </script>
+</body>
+</html>

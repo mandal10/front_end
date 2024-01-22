@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // FOR LOOP QUESTIONS
+
+        // 1.Write a program that prints numbers from 1 to 10 using a for loop.
+        // for(let i=1; i<=10; i++){
+        //     console.log(i);
+        // }
+
+
+        //2. Write a program that asks the user to enter a number and prints its multiplication table using a for loop.
+
+        // let num=Number(prompt("enter your any number to print table"));
+        // for(let i=1; i<=10; i++){
+
+        //     console.log(`${num}* ${i}=${i*num}`);
+        //     // console.log(num*i);
+        // }
+
+
+
+        // 3.Write a program that prints the sum of all even numbers between 1 and 100 using a for loop.
+        // let result=0;
+        // for(let i=1; i<=100; i++){
+
+        //     if(i%2==0){
+        //         result=result+i
+        //         console.log(result);
+        //     }
+        // }
+
+        //4. Write a program that prints the factorial of a given number using a for loop.
+        // let num=Number(prompt("enter your number"));
+        // let result=1;
+        // for (let i=1; i<=num;i++){
+
+        //     result=result*i;
+        // }
+        // console.log (result);
+
+
+        // 5.Write a program that prints the Fibonacci sequence up to a given number using a for loop.
+
+        // var n=Number(prompt("enter your tearms"));
+        // let a=0;
+        // let b=1;
+        // console.log(a);
+        // console.log(b);
+
+        // let c;
+        // for(let i=1; i<=n-2; i++){
+        //     c=a+b;
+        //     console.log(c);
+        //     a=b;
+        //     b=c;
+        // }
+
+
+        // 6.Write a program that calculates the average of a list of numbers using a for loop.
+
+        // let num=[10,20,30,40,];
+        // let sum=0;
+        // let avg;
+
+        // for(let i=0; i<num.length;i++){
+        //     sum=sum+num[i];
+
+        // }
+        // avg=sum/num.length;
+        // console.log("average of list",avg);
+
+
+
+
+        // 7.Write a program that prints the reverse of a given string using a for loop.
+
+        // let aaray=[];
+        // let fruit = ["apple", "banana", "mango", "grapes"];
+
+           
+        //     for (let i = fruit.length -1; i >= 0; i--) {
+        //         aaray.push(fruit[i]);
+        //     }
+        //     console.log(fruit);
+        //     console.log(aaray);
+
+
+        //8. Write a program that finds the largest number in a list using a for loop.
+
+        // let num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        // let largest = num[0];
+        // for (let i = 0; i < num.length; i++) {
+
+        //     if (num[i] > largest) {
+        //         largest = num[i];
+        //     }
+
+        // }
+        // console.log("it is largest element ", largest);
+
+
+        // 9.Write a program that checks if a given number is prime using a for loop.
+
+        // let isprime= true;
+        // let num=Number(prompt("enter your number to check it is prime or not"));
+
+        // for( let i=2; i<num; i++){
+        //     if(num%i==0){
+        //         isprime=false;
+        //         break;
+        //     }
+        // }
+        // if(isprime==true){
+        //     console.log("it is prime number",isprime);
+        // }
+        // else{
+        //     console.log("it is not prime number",isprime);
+
+        // }
+
+        //10. Write a program that calculates the sum of all numbers divisible by 3 or 5 between 1 and 100 using a for loop.
+
+        // let sum=0;
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0 || i % 5 == 0) {
+        //         sum=sum+i;
+        //         console.log(i);
+        //     }
+        // }
+        // console.log(sum);
+
+
+
+        //11. Write a program that asks the user to enter a series of numbers and stops when the user enters a negative number using a for loop.
+        
+
+        // for(let i=1; i;i++){
+
+        //     let num=Number(prompt("enter your  of number"));
+        //     if(num>=0){
+        //         console.log(num);
+        //     }
+        //     else{
+        //         console.log("stop ! stop !")
+        //     }
+        // }
+
+
+        //12. Write a program that counts the number of vowels in a given string using a for loop.
+
+
+
+
+        //13. Write a program that checks if a given string is a palindrome using a for loop.
+
+        //14. Write a program that prints a triangle of stars using a for loop.
+
+        //15. Write a program that finds the second largest number in a list using a for loop.
+
+        // let ar = [2, 4, 5, 1, 8, 9, ];
+        // for (let i = 0; i < ar.length; i++) {
+        //     for (let j = i + 1; j < ar.length; j++) {
+        //         if (ar[i] < ar[j]) {
+        //             let c = ar[i];
+        //             ar[i] = ar[j];
+        //             ar[j] = c;
+        //         }
+        //         console.log(ar[i],ar[j])
+                
+        //     }
+        // }
+        // console.log( ar);
+        // console.log("first largest",ar[0]);
+        // console.log("second largest",ar[1]);
+        // console.log("third largest",ar[2]);
+        // console.log("fourth largest",ar[3]);
+
+
+
+        //16. Write a program that calculates the sum of all digits in a given number using a for loop.
+
+        // let num=[1,2,3,4,5,6,7,8,9,10,10];
+        // let result=0;
+
+        // for(let i=0; i<num.length;i++){
+
+        //     result=result+num[i];
+        // }
+        // console.log(result);
+
+
+        // 17.Write a program that checks if a given number is a perfect square using a for loop.
+
+        // let num = Number(prompt("enter your number"));
+        // let res = Math.sqrt(num);
+        // if (res % 1 == 0) {
+        //     console.log("it is perfact square", res);
+        // } else {
+        //     console.log("it is not perfact square", res);
+        // }
+
+        //18. Write a program that asks the user to enter a series of numbers and prints the sum and average using a for loop.
+        // let num1=Number(prompt("how many times you want to add number"));
+        // let sum=0;
+        // let avr;
+        // for(let i=1; i<=num1; i++){
+        // let num=Number(prompt("enter your numbers"));
+        // sum=sum+num;
+        //  avr=sum/num1;
+
+        // }
+        // console.log("sum of",sum);
+        // console.log("avr of",avr);
+
+
+        //19. Write a program that prints the ASCII values of all characters in a given string using a for loop.
+
+        //20. Write a program that checks if a given string is a pangram(contains all letters of the alphabet) using a for loop.
+
+        //21. Write a program that calculates the power of a number using a for loop.
+        // let res=1;
+        // let num=Number(prompt("enter your number"))
+        // for(let i=1;i<num; i++){
+        //    res=num**2;
+        // }
+        // console.log(res);
+
+        //22. Write a program that prints the binary representation of a given number using a for loop.
+        //23. Write a program that prints a pyramid of numbers from 1 to a given number using a for loop.
+
+        //24. Write a program that calculates the product of all numbers in a list using a for loop.
+        // let num=[1,2,3,4,5];
+        // let res=1;
+        // for(let i=1; i<num.length;i++){
+
+        //     res=res*num[i];
+
+        // }
+        // console.log(res);
+
+        //25. Write a program that prints the uppercase letters of the alphabet using a for loop.
+
+        // let fruits=["apple","banana","mango","grapes"]
+        // for(let i=1; i<fruits.length;i++ ){
+
+        //     console.log(fruits[i].toUpperCase()); 
+        // }
+
+
+
+        //26. Write a program that asks the user to enter a series of numbers and prints the count of positive and negative numbers using a for loop.
+
+        // let num=Number(prompt("enter your elements "));
+        // for(let i=1; i<=num;i++){
+        //     let data=Number(prompt("enter yous series of number"));
+
+        //     if(data>=1){
+        //         console.log("it is positive number",data);
+        //     }
+        //     else if(data==0){
+        //         console.log("it is zero",data);
+        //     }
+        //     else{
+        //         console.log("it is negative number",data);
+        //     }
+        // }
+
+        //27. Write a program that calculates the sum of all prime numbers between 1 and 100 using a for loop.
+
+        // let isprime = true;
+        // let result = 0;
+        // for (let j = 1; j <= 100; j++) {
+        //     for (let i = 2; i < 100; i++) {
+            
+        //         if (j % i == 0) {
+        //             isprime = false;
+        //             break;
+        //         }
+        //     }
+        // }
+        // if (isprime == true) {
+        //     result = result + isprime;
+        //     console.log(result);
+        // }
+
+
+        //28. Write a program that prints the square of each number from 1 to 10 using a for loop.
+
+        // let res=1;
+        // for(let i=1; i<=10;i++){
+
+        //     res=i**2;
+        // console.log( i,res);
+
+        // }
+
+        //29. Write a program that checks if a given number is a Armstrong number using a for loop.
+
+        //30. Write a program that prints a pattern of numbers as follows using a for loop:
+        //         1
+        //         22
+        //         333
+        //         4444
+        //         55555
+
+
+        // WHILE LOOP QUESTIONS
+
+
+        // 1. Write a program that prints numbers from 1 to 10 using a while loop.
+        // let i=1;
+        // while(i<=10){
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // 2. Write a program that asks the user to enter a number and prints its multiplication table using a while loop.
+
+        // let num = Number(prompt("enter your number"));
+        // let i = 1;
+        // while (i <= 10) {
+        //     console.log(`${num}*${i}=${num * i}`)
+        //     i++;
+        // }
+
+        // 3. Write a program that asks the user to enter a password and keeps asking until the correct password is entered.
+
+        // let pass="bapi";
+        // while(true){
+
+        //     let p=prompt("enter your password");
+        //     if(pass==p){
+        //         console.log("password is",p);
+        //         break;
+        //     }
+
+        // }
+           
+        // 4. Write a program that prints the sum of all even numbers between 1 and 100 using a while loop.
+ 
+        // let i=1;
+        // let sum=0;
+        // while(i<=100){
+
+        //     if(i%2==0){
+        //         sum=sum+i
+        //     }
+        //     i++;
+        // }
+        // console.log("sum of all even number",sum);
+
+        // 5. Write a program that prints the factorial of a given number using a while loop.
+
+        // let i=1;
+        // let num=4;
+        // let result=1;
+
+        // while(i<=num){
+        //    result=result*i;
+        //    i++
+
+        // }
+        // console.log(result);
+
+
+        // 6. Write a program that asks the user to guess a number between 1 and 10 and keeps asking until the correct number is guessed.
+        //  let i=1;
+        //  let guesee=5;
+        //  while(true){
+        //     let num=Number(prompt("guessed a number 1 to 10"));
+        //     if(typeof guesee===5){
+        //         console.log("you guesse right number");
+        //     }else{
+        //         console.log("you guesse wrong number");
+        //     }
+          
+
+        //  }
+
+        // 7. Write a program that counts the number of digits in a given number using a while loop.
+        // 8. Write a program that calculates the average of a list of numbers using a while loop.
+        // let ar=[10,20,30,40,50];
+        // let sum =0;
+        // let i=0;
+        // while(i<ar.length){
+        //     sum=sum+ar[i];
+        //     i++;
+        // }
+        // console.log(sum);
+        // console.log(sum/ar.length);
+        // 9. Write a program that prints the Fibonacci sequence up to a given number using a while loop.
+        // 10. Write a program that asks the user to enter a series of numbers and stops when the user enters a negative number.
+        // 11. Write a program that asks the user to enter a string and prints each character on a new line using a while loop.
+        // 12. Write a program that finds the largest number in a list using a while loop.
+        // 13. Write a program that calculates the sum of all numbers divisible by 3 or 5 between 1 and 100 using a while loop.
+        // 14. Write a program that asks the user to enter a series of numbers and prints the maximum and minimum numbers using a while loop.
+        // 15. Write a program that counts the number of vowels in a given string using a while loop.
+        // let string="bapimandal123";
+        // let vowel=["a","e","i","o","u"];
+        // let i=0;
+        // let count=0;
+        // while(i<string.length){
+        //     if(vowel.includes(string[i])){
+        //         count++
+        //     }
+        //     i++
+        // }
+        // console.log("vowels",count);
+        // 16. Write a program that checks if a given number is prime using a while loop.
+        // 17. Write a program that calculates the exponentiation of a number using a while loop.
+        // 18. Write a program that prints a triangle of stars using a while loop.
+        
+        // 19. Write a program that finds the second largest number in a list using a while loop.
+        // 20. Write a program that checks if a given string is a palindrome using a while loop.
+        // 21. Write a program that calculates the sum of all digits in a given number using a while loop.
+        // 22. Write a program that prints the reverse of a given string using a while loop.
+        // 23. Write a program that calculates the product of all numbers in a list using a while loop.
+        // 24. Write a program that checks if a given number is a perfect square using a while loop.
+        // 25. Write a program that asks the user to enter a series of numbers and prints the sum and average using a while loop.
+        // 26. Write a program that prints the ASCII values of all characters in a given string using a while loop.
+        // 27. Write a program that checks if a given string is a pangram(contains all letters of the alphabet) using a while loop.
+        // 28. Write a program that asks the user to enter a series of numbers and prints the count of positive and negative numbers using a while loop.
+        // 29. Write a program that calculates the power of a number using a while loop.
+        // 30. Write a program to check whether a number is Armstrong or not.
+
+
+    </script>
+</body>
+
+</html>
