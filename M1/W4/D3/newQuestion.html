@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q.1 Check if the String is Symmetrical or Palindrome
+
+        // let string = prompt("enter your string");
+        // let string1 = "";
+
+        // for(let i=string.length-1; i>=0;i--){
+        //  string1=string1+string[i];
+
+        // }
+        // console.log(string);
+        // console.log(string1);
+        // if(string==string1){
+        //    }
+        //    else {
+        //     console.log("it is not palindrome");
+        //    }
+        
+        
+        // 3.2 = 3
+        // 4.777= 4
+
+        let s="abcabc";
+        let mid= Math.floor((0+s.length)/2)
+        if(s.length%2==0){
+            first= s.slice(0,mid)
+            second=s.slice(mid)
+        }else{
+            first= s.slice(0,mid)
+            second=s.slice(mid+1)
+        }
+
+        console.log("first", first)
+        console.log("second", second);
+
+
+        if(first==second){
+            console.log("symmetrical");
+        }
+       else{
+        console.log("Not symmetrical");
+       }
+
+
+
+
+        // Q.2 Remove i’th Character From String in js
+
+        //Q.3 Find the Length of a String
+    //     let str ="bapi";
+    //     let count=0;
+    //    for(let i=0; i<str.length;i++){
+    //     count++;
+    //    }
+    //    console.log(count);
+
+
+        // Q.4 Avoid Spaces in String Length
+        
+        // let str = "abc def";
+        // let count=0;
+
+        // for (let i = 1; i <= str.length; i++) {
+        //     count++   
+        // }
+        // console.log(count);
+
+
+        // let count1=0;
+        // let str1 = str.replace(" ", "");
+        // for (let i = 1; i <= str1.length; i++) {
+        //     count1++
+        // }
+        // console.log(count1);
+
+
+
+        // Q.5 Print Even Length Words in a String
+        // let str1="i am bapi mandal";
+
+        // let x=str1.split(" ");
+        // console.log(x);
+        // for(i of x){
+        //     if(i.length%2==0){
+        //       console.log(i);
+        //     }
+        // }
+         
+        // Q.6 Print First Half of the String in Uppercase and the Next Half in Lowercase
+
+        // let str="bapi";
+        // let str1=str.slice(0,2).toUpperCase();
+        // let str2=str.slice(2,4).toLowerCase();
+        // let str3=str1+str2;
+        // console.log(str3);
+
+
+
+    </script>
+</body>
+
+</html>
