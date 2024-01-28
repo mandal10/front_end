@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Character sets
+
+        // * = zero or more character
+
+        // w= word character = alphabets , digits ,_
+        // W=non - word character
+        // \d= digit
+        // \D= non digit
+        // Atleast one Capital letters
+        // Group ()
+
+
+        // Quantifier {}
+
+        // let str="0abcd0";
+        // str="@abcd#";
+        // str="bcd";
+        // str= "hello aabcddd"
+        // str="7011474125"
+        // str="abcd 12345"
+        // str= "abcD"
+        // str="ABCDe"
+        // str="ABAB"
+        str="ABABCDEFEF";
+
+
+
+        // let regex = /^[0-9].*[0-9]$/;
+        // regex=/^\W.*\W$/
+        // regex=/^[abc]/
+        // regex=/a{2}bcd{3}/
+        // regex=/^[0-9]{10}$/
+        // regex=/[1234]{2,4}/
+        // regex= /[A-Z]+/
+        // regex=/^[A-Z].*[a-z]$/
+        // regex=/(AB){2}/;
+        regex=/(AB){2}CD(EF){2}/
+
+
+
+        let result = regex.exec(str);
+        console.log("result is",result);
+
+        if(regex.test(str)){
+            console.log(`pattern ${regex.source} matches the string ${str}`);
+        }
+        else{
+            console.log(`pattern ${regex.source} does not matches the string ${str}`);
+
+        }
+    </script>
+</body>
+</html>
