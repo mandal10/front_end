@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // JS Computed Properties
+
+        const x = "name";
+
+        const person = {
+            ["full" + x]: "bapi",
+            "age": 18,
+            "endterm marks": 89
+        };
+
+        console.log(person);
+
+        // check whether person object contains age or not
+
+        //  console.log(person.hasOwnProperty("age"));
+
+        if (person.hasOwnProperty("age")) {
+            console.log("age is ", person.age);
+        }
+        else {
+            console.log("age property not found")
+        }
+
+
+        // Search in values
+        // 18 
+
+
+        const objvalues = Object.values(person);
+
+        //console.log(objvalues);
+        console.log(objvalues.includes(18));
+
+
+        // delete person.marks;
+
+        // console.log(person);
+
+        console.log(person["endterm marks"]);
+
+        // for of loop= Array
+        // for in loop = Object
+
+        for (let i in person) {
+            console.log(i, person[i]);
+        }
+
+        const { age: myage } = person;
+
+        console.log("age is ", myage);
+
+
+        // Nested destructuring
+
+
+        // Nested objects= Object within object
+
+        const student = {
+            "name": "hemant",
+            "age": 20,
+            "address": {
+                "hno": 12,
+                "city": "delhi",
+                "state": "delhi",
+                "country": "india"
+            }
+        }
+
+        console.log(student);
+        console.log(student.address);
+        console.log(student.address.city);
+
+
+        const { address: { city } } = student;
+        console.log("city is ", city);
+
+        let ar = [1, 2, 3]
+        for (let i in ar) {
+            console.log(i, ar[i]);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
