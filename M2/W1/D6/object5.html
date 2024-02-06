@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Ways to crete object
+        // 1. using object literal
+        const students = { "roll": 12, "name": "bapi" };
+        console.log(students);
+
+        // 2. using new keyword (object Instance)
+        const person = new Object();
+        person.firstname = "bapi";
+        person.lastname = "mandal";
+        person.age = 21;
+        console.log(person);
+
+        // 3. by creating class
+        class employee {
+
+            constructor(empid, empname) {
+                this.empid = empid;
+                this.empname = empname;
+            }
+        }
+
+        e = new employee(101, "bapi");
+        console.log(e);
+
+
+        // date object
+        // ways to create date object
+        // 1.new Date()
+        // 2. new Date(string date)
+        // 3.new date (year , month )
+        // 4. new date (year, month, day)
+        // 5. new date (year, month, day, hours)
+        // 6. new date (year, month, day, hours ,minutes)
+        // 7. new date (year, month, day, hours ,minutes, second)
+        // 8. new date (year, month, day, hours ,minutes, second,milisecond)
+        // 9. new date(milisecond)
+
+        // 1.display current date and time
+
+        const d = new Date();
+        console.log(d)
+
+        const d1 = new Date("2023-11-09 14:30:30");
+        console.log("date in string is", d1)
+
+        // month = 0 to 11
+        const d2 = new Date(2012, 3);
+        console.log("date in string is", d2)
+
+        const d3 = new Date(2012, 3, 21);
+        console.log("date in string is", d3)
+
+        const d4 = new Date(2012, 3, 21, 25);
+        console.log("date in string is", d4)
+
+        const d5 = new Date(2012, 3, 21, 9, 0, 0, 34);
+        console.log("date in string is", d5)
+
+        const d6 = new Date(55788655666);
+        console.log(d6)
+
+        // zero time /Epoch time
+        // 1 jan 1970
+        // 1day = 24 *60*60*1000 = 86400000ms
+
+
+
+
+
+    </script>
+</body>
+
+</html>
