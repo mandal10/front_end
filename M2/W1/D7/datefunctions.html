@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const d = new Date();
+        console.log(d);
+
+        // Convert date object to string
+        const d1 = d.toDateString();
+        console.log("date in string is  ", d1, typeof (d1));
+
+        const d2 = d.toJSON();
+        console.log("date in string is  ", d2, typeof (d2));
+
+
+        // How to display American Time
+
+        const x = new Date();
+        let options = { "timeZone": "America/New_York" }
+        const ustime = x.toLocaleString("en-US", options);
+        console.log(ustime);
+
+        // Fetch year, month , day, date from a given date
+
+
+        const d3 = new Date();
+        console.log("Current date is ", d3);
+        console.log("Year is ", d3.getFullYear())
+        console.log("Month is ", d3.getMonth() + 1)
+        console.log("Date is ", d3.getDate())
+        console.log("Day is ", d3.getDay())
+        console.log("hOURS is ", d3.getHours())
+        console.log("MINUTES is ", d3.getMinutes())
+        console.log("seconds is ", d3.getSeconds())
+        console.log("millisec is ", d3.getMilliseconds())
+
+        switch (d3.getDay()) {
+            case 0: console.log("It's sunday");
+                break;
+            case 1: console.log("It's monday");
+                break;
+            case 2: console.log("It's tuesday");
+                break;
+            case 3: console.log("It's wednesday");
+                break;
+
+        }
+
+        // set day, month, year
+
+        const d5 = new Date();
+        d5.setFullYear(2021);
+        d5.setMonth(3);
+        d5.setDate(2);
+        console.log(d5);
+
+        const d6 = new Date(1970, 0, 2)
+        const y = Date.parse(d6);
+        console.log(y);
+
+        // Give date in milliseconds
+
+        // Convert milliseconds to date
+
+        const z = new Date(115200000);
+        console.log("date is ", z)
+
+        console.log("now ", Date.now())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
