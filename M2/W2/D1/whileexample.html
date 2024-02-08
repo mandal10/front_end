@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // WAP TO REVERSE A NUMBER
+
+        // let num = parseInt(prompt("enter a number"));
+
+        // let temp = num;
+        // console.log("original number ", num);
+        // let rev = 0;
+        // while (num > 0) {
+
+        //     let last = num % 10;
+        //     rev = rev * 10 + last;
+        //     num = parseInt(num / 10);
+        // }
+
+        // console.log("Reverse number is", rev);
+
+        // if (temp == rev) {
+        //     console.log("number is palindrome");
+        // }
+        // else {
+        //     console.log("number is not palindrome");
+        // }
+
+
+        // find sum of digits = 781 = 7+8+1= 16
+
+
+        // find 3 digit armstrong number
+        // 370 = 27 + 343 + 0 = 370
+
+
+        // let num = parseInt(prompt("enter a number"));
+
+        // let rev = 0;
+        // while (num > 0) {
+
+        //     let last = num % 10;
+        //     rev = rev + last;
+        //     num = parseInt(num / 10)
+        // }
+        // console.log(rev);
+
+        let num = parseInt(prompt("enter a number"));
+        let num1 = num
+        let rev = 0;
+        while (num > 0) {
+
+            let last = num % 10;
+            rev = rev + last ** 3;
+            num = parseInt(num / 10)
+        }
+        console.log(rev);
+        if (num1 == rev) {
+            console.log(num1, "number is armstrong");
+        }
+        else {
+            console.log(num1, "number is not armstrong");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
