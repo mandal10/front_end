@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // wap to add two numbers using function
+        // 1. first way
+
+        // function add(a, b) {
+
+        //     console.log("sum is", a + b)
+        // }
+        // add(12, 45);
+
+        // 2.second way
+        // using return keyword
+
+        // function add(a, b) {
+
+        //     return a + b
+        // }
+        // console.log(add(12, 45));
+
+
+        //3. anonymous function
+
+        // let func = function (a, b) {
+
+        //     console.log(a + b)
+        // }
+        // func(6, 9)
+
+
+        //4. arrow function
+
+        // let add = (a, b) => {
+
+        //     console.log(a + b)
+        // }
+        // add(6, 9)
+
+
+        let add = (a, b) => a + b
+        console.log(add(6, 9));
+
+
+
+        // wap to return an array of length of even strings
+
+        let names = ["bapi ", "soumya", "hemant", "mohit"];
+        // [4,6,6,5]
+
+        const res = names.map((element, index) => element.length);
+        console.log(res)
+
+        // setTimeOut = exeutes a function after a specified time interval
+
+        const display = () => console.log("hello");
+        setTimeout(display, 3000);
+
+        // an arrow function does not have the argument object
+
+        // function show(x) {
+        //     console.log(x + +(arguments[2]))
+        // }
+        // show(10, 20, 30)
+
+
+        // argument does not work in arrow function
+        // const show = (x) => {
+        //     console.log(x + +(arguments[2]))
+        // }
+        // show(10, 20, 30)
+
+        // onjects = properties + behaviour (functions)
+
+        const emp = {
+            "id": 101,
+            "name": "yogesh",
+            "salary": 500000,
+            getSalary: function () {
+                return this.salary;
+            },
+            incrementSalary: function () {
+                return 0.05 * this.salary + this.salary
+            }
+        }
+
+        console.log(emp);
+        console.log(emp.name)
+        console.log(emp.getSalary())
+        console.log(emp.incrementSalary())
+
+
+
+
+    </script>
+</body>
+
+</html>
