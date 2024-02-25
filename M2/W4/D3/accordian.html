@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+margin: 0;
+padding: 0;
+}
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+           
+        }
+      
+        .accordian {
+           border: 2px solid rgb(57, 57, 95);
+            background-color: rgb(252, 216, 216);
+            width: 600px;
+            margin: 60px 0px 0px 442px;
+          
+        }
+
+        label {
+            font-size: 30px;
+            padding: 0px 15px;
+          
+     
+
+        }
+
+        p {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 17px;
+            background-color: rgb(248, 245, 245);
+            color: black;
+            padding: 10px;
+            
+        }
+
+        .accordian input:checked~p {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+        input{
+            display: none;
+        }
+        span{
+            font-size: 40px;
+        }
+           
+    </style>
+</head>
+
+<body>
+    <h1>Accordian</h1>
+    <div class="accordian">
+        <div>
+            <label for="item1">Item1
+
+            </label>
+            <input type="checkbox" name="" id="item1"><span>&raquo;</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia in laboriosam sit totam animi quam at
+                iusto suscipit beatae soluta cupiditate odit quaerat tempore optio, quas voluptatem, temporibus mollitia
+                nesciunt. Labore officia illum atque facilis ducimus nobis praesentium expedita? Distinctio.</p>
+        </div>
+        <div>
+            <label for="item2"> Item2
+
+            </label>
+            <input type="checkbox" name="" id="item2"> <span>&raquo;</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia in laboriosam sit totam animi quam at
+                iusto suscipit beatae soluta cupiditate odit quaerat tempore optio, quas voluptatem, temporibus mollitia
+                nesciunt. Labore officia illum atque facilis ducimus nobis praesentium expedita? Distinctio.</p>
+        </div>
+        <div>
+            <label for="item3"> Item3
+
+            </label>
+            <input type="checkbox" name="" id="item3"><span>&raquo;</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia in laboriosam sit totam animi quam at
+                iusto suscipit beatae soluta cupiditate odit quaerat tempore optio, quas voluptatem, temporibus mollitia
+                nesciunt. Labore officia illum atque facilis ducimus nobis praesentium expedita? Distinctio.</p>
+        </div>
+    </div>
+</body>
+
+</html>
