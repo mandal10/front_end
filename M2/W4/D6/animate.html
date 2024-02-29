@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            position: absolute;
+            animation-name: mukesh;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+        }
+        @keyframes mukesh{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 400px;
+                left: 0px;
+                color: green;
+            }
+            30%{
+                top: 400px;
+                left: 600px;
+                color: orangered;
+            }
+            75%{
+                top: 0px;
+                left: 600px;
+                color:fuchsia;
+                font-size: 40px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                
+            }
+        }
+
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            position: absolute;
+            animation-name: BAPI;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+        }
+        @keyframes BAPI{
+            0%{
+                top: 0px;
+                left:600px;
+            }
+            25%{
+                top: 400px;
+                left:600px;
+                color: blue;
+            }
+            30%{
+                top: 400px;
+                left: 0px;
+                color: gold;
+            }
+            75%{
+                top: 0px;
+                left: 0px;
+                color:darkolivegreen;
+                font-size: 40px;
+            }
+            100%{
+                top: 0px;
+                left: 600px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+      <h1> MUKESH</h1> 
+    </div>
+    <div class="box1">
+        <h1>BAPI </h1>
+    </div>
+</body>
+</html>
