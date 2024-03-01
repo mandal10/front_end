@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .box{
+            height: 350px;
+            width: 250px;
+            background-color: grey;
+            box-shadow: 2px 5px 10px grey;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+        <h1>youtube</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab non molestiae iste exercitationem repudiandae, porro doloribus quaerat itaque reiciendis fugiat consequatur optio dignissimos dolore, dolorem aliquam odio consectetur reprehenderit repellat!</p>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".box"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeListR
+	VanillaTilt.init(document.querySelectorAll(".box"));
+</script>
+</body>
+</html>
