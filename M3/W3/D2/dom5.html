@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        /* border: 2px black solid; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: crimson;
+
+    }
+
+    #logo {
+        color: white;
+        padding-left: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #menu {
+        display: flex;
+        height: 50px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #menu li {
+        list-style: none;
+        padding-right: 25px;
+        text-transform: capitalize;
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+    <header>
+        <h1 id="logo">Badatya</h1>
+        <ul id="menu">
+
+
+        </ul>
+    </header>
+
+
+    <script>
+        // Dynamically add list items()
+        // Home services about courses
+
+        // let courselist = ["java", "js", "python", "c++", "laravel"];
+        // let menu = document.getElementById("menu");
+        // courselist.map((item) => {
+        //     let li = document.createElement("li");
+        //     li.textContent = item;
+        //     menu.appendChild(li)
+        //     console.log(item);
+        // })
+
+        // documentFragment 
+
+        let courselist = ["java", "javascript", "python", "c++",];
+        let menu = document.getElementById("menu");
+        let fragment = new DocumentFragment();
+
+        courselist.map((item) => {
+            let li = document.createElement("li");
+            li.textContent = item;
+            fragment.appendChild(li);
+
+
+        })
+        menu.appendChild(fragment)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
