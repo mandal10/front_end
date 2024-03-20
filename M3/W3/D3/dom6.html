@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. generate random number between 0 to 1
+        // 0 -inclusive , 1= exclusive
+
+        let x = Math.random();
+        console.log(x);
+
+        // Random number between 0 to 9
+        let y = Math.floor(Math.random() * 11);
+        console.log(y);
+
+        // 5 Random numbers
+        let arr = [];
+        for (let i = 0; i < 5; i++) {
+            let z = Math.floor(Math.random() * 11);
+            arr.push(z)
+        }
+        console.log(arr);
+
+        let max = 70  //(exclusive)
+        let min = 50
+
+        // let s = Math.floor(Math.random() * (max - min)) + min;
+        // console.log(s);
+
+        //==========================
+
+        // let max=70 //(inclusive)
+        // let min=50  //(inclusive)
+
+        let s = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(s);
+
+
+        // otp generate
+        // let max = 9999 //(inclusive)
+        // let min = 1000  //(inclusive)
+
+        // let s = Math.floor(Math.random() * (max - min + 1)) + min;
+        // console.log(s);
+
+
+    </script>
+</body>
+
+</html>
