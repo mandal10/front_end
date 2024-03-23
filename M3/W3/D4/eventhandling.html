@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        A text container
+    </div>
+    <!-- <button id="btn">Click to change color</button>-->
+    <script>
+        // What are events?
+        // Events are js objects. Events generate when we interact with the web pages, e.g- scrolling, click, mouseover,mouseout, keyboard events(key press, key released). Load event means when a web page is loaded.
+        // DOM -> Event Listeners
+
+        //1. Click event.
+
+        //let btn = document.getElementById("btn");
+        let div1 = document.getElementById("div1");
+        // div1.addEventListener("click", function () {
+
+        //     div1.style.backgroundColor = "red";
+        //     div1.style.color = "white";
+        //     div1.style.fontSize = "30px";
+
+        // });
+
+        function change() {
+
+            div1.style.backgroundColor = "red";
+            div1.style.color = "white";
+            div1.style.fontSize = "30px";
+
+        }
+        // Function passing
+        div1.addEventListener("click", change);
+        // hoisting
+        // Declarations moved at the top;
+        // declaration   var a;
+        // initilaization   a=10;
+        // var a=10;
+
+        a = 10;
+        console.log(a);
+
+        var a;
+
+        show();
+
+        function show() {
+            console.log("this is show function");
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
