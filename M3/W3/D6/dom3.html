@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="head1">Heading 1</h1>
+    <h1 class="head1">Heading 2</h1>
+    <h1 id="head3">Heading 3</h1>
+
+    <label for="very-poor">
+        Very Poor
+    </label>
+    <input type="radio" name="rating" value="Very Poor" />
+
+    <label for="Poor">
+        Poor
+    </label>
+    <input type="radio" name="rating" value="Poor" />
+    <label for="Good">
+        Good
+    </label>
+    <input type="radio" name="rating" value="Good" />
+    <label for="Excellent">
+        Excellent
+    </label>
+    <input type="radio" name="rating" value="Excellent" />
+
+    <br />
+    <button onclick="submitrating()">SUBMIT</button>
+
+    <p id="output"></p>
+    <script>
+        // DOM Methods
+        // 1. getElementById()
+        // 2. getElementsByClassName()
+        // 3. getElementsByTagName()
+        // 4. getElementsByName()
+        // 5. querySelector()
+        // 6. querySelectorAll()
+
+        // let headings = document.getElementsByTagName("h1");
+        // console.log(headings);
+        // console.log(headings[0]);
+        // headings[0].innerHTML = "Heading changed";
+
+
+        function submitrating() {
+
+            let ratings = document.getElementsByName("rating");
+
+            // Return Type is NodeList
+            ratings.forEach((elem) => {
+                if (elem.checked) {
+                    document.getElementById("output").innerHTML = ` You have selected ${elem.value}`;
+                }
+
+            });
+
+            let a = document.querySelector("h1");
+            console.log(a)
+
+            let b = document.querySelectorAll("h1")
+            console.log(b)
+
+            let c = document.querySelectorAll("h1")[1];
+            console.log(c)
+
+            let d = document.querySelector("#head3")
+            console.log(d)
+
+            let e = document.querySelector("#head3").innerHTML
+            console.log(e)
+
+        }
+
+    </script>
+</body>
+
+</html>
