@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #x {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+    }
+
+
+
+    #btn {
+        margin-top: 8px;
+    }
+
+    .img {
+        border: 2px black solid;
+        margin-top: 20px;
+
+    }
+
+    #image {
+        display: block;
+        display: none;
+
+    }
+
+    form {
+        border: 2px black solid;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+</style>
+
+<body>
+    <!-- Question.1  -->
+    <div id="x">
+        <h1>Background</h1>
+    </div>
+    <button onclick="backcolor()">Change color</button>
+
+
+    <!-- Question.2 -->
+    <!-- ans done  -->
+
+    <!-- Question.3 -->
+    <div class="img">
+        <img id="image"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAPFBMVEX///8AAADz8/NgYGCenp5ycnK+vr53d3djY2P7+/uBgYG0tLRERETLy8vExMShoaHb29tRUVEODg4iIiKNLvdjAAAArElEQVRoge3ZUQ6DIBBF0ZlaREUEZf97rTRdgjcm9Z0F3A8VQ2bMRB7iBfilxzgNl5vieKbnxSHLbIlquydbufhqXNvdDq59WODiwWqj2q2aZaje8vcUbeV9ubLd9r8RERGRW9USw+Viqb2dqEtROi9cTLrLtnPxnb1Co3H0saAvFP0U2UMkIiIizwOO/sihJTpuRQfF6BWaa7uzawV0IYKuctAlVAeuz0T+3gcd1BYFZSAIdAAAAABJRU5ErkJggg=="
+            alt="">
+        <button id="btn" onclick="toggle()">click me</button>
+
+    </div>
+
+    <!-- Question.4 -->
+
+    <div>
+
+        <form action="" onsubmit="submitdata(); return false;">
+            <label for="">Name :</label>
+            <input type="text" name="name" id="name">
+            <h1 id="output"></h1>
+            <button>submit</button>
+        </form>
+    </div>
+
+
+    <div id="menu">
+        <h1 id="hide">Hide alll child elements</h1>
+        <p id="hidepara">hide all paragraphs in html page by js </p>
+    </div>
+
+</body>
+<script>
+
+    // Create a function to change the background color of a specific element when called.
+
+    function backcolor() {
+        let colour = document.getElementById("x");
+        colour.style.backgroundColor = "red";
+    }
+
+
+    // Write a script to dynamically create a new HTML element and append it to the DOM.
+
+    let div = document.createElement("div");
+    div.id = "main";
+    div.className = "div1";
+    div.innerHTML = "dynamically crete a new html";
+    div.innerHTML = "<p> this is a paragraph</p>";
+    // let main = document.getElementById("main");
+    // main.style.bgColor = "red";
+    document.body.appendChild(div)
+
+
+    // Implement a function to toggle the visibility of an element when a button is clicked.
+
+    function toggle() {
+        let images = document.getElementById("image");
+        if (images.style.display = "none") {
+
+            images.style.display = "block"
+        }
+        else {
+            images.style.display = "none"
+        }
+
+    }
+
+
+    // Write a script to get the value of a form input field when a button is clicked and display it on the page.
+
+
+    function submitdata() {
+        let name = document.getElementById("name").value;
+        document.getElementById("output").innerHTML = name
+
+    }
+
+
+    // Create a function to remove all child elements of a specified DOM element.
+
+    let h1 = document.getElementById("hide")
+    let para = document.getElementById("hidepara")
+    let menu = document.getElementById("menu:last-child")
+    menu.parentElement.removeChild(menu);
+
+
+
+    // Implement a script to dynamically load content from an external file and display it on the page.
+
+
+    // Write a function to add a CSS class to an element when called.
+
+
+    // Implement a script to change the text content of an element when a button is clicked.
+    // Create a function to hide all elements with a specific CSS class.
+
+
+    // Write a script to dynamically create a dropdown menu with options populated from an array.
+
+
+    // Implement a function to detect when the user scrolls the page and display a message.
+
+
+    // Create a script to dynamically create a slideshow with images loaded from an array.
+
+
+    // Write a function to validate a form before submitting it, checking for empty fields.
+
+
+    // Implement a script to change the font size of text when a button is clicked.
+
+
+    // Create a function to append a new list item to an existing unordered list.
+
+
+    // Write a script to create a countdown timer that updates every second.
+
+
+    // Implement a function to highlight all occurrences of a specific word within a paragraph.
+
+
+    // Create a script to dynamically load JSON data from an external source and display it on the page.
+
+    // Write a function to disable a form submit button until all required fields are filled.
+
+</script>
+
+</html>
