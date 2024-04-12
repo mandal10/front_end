@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        enter username:
+        <input type="text" id="username">
+        <br>
+        <br>
+        enter password:
+        <input type="text" id="password">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <script>
+
+
+        // let username = document.getElementById("username");
+        // username.addEventListener("blur", function () {
+        //     let regex = /^[^0-9][A-Za-z0-9]{4,}$/
+        //     let text = username.value;
+        //     if (regex.test(text)) {
+        //         console.log("pattern matches");
+        //         username.style.border = "3px green solid"
+        //         valid = true;
+        //     }
+        //     else {
+        //         console.log("pattern doesn't match")
+        //         username.style.border = "3px red solid"
+
+        //         valid = false;
+        //     }
+        // })
+
+
+
+        let password = document.getElementById("password");
+        // sp,digit,cap,small
+        // ?=(positive lookhead)= search in whole string
+        // . single character
+        // *= zero or more times
+
+
+
+        password.addEventListener("blur", function () {
+
+
+            let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            let pass = password.value;
+            if (regex.test(pass)) {
+                console.log("password pattern matches")
+                password.style.border = "3px green solid"
+                valid = true;
+
+
+            }
+            else {
+                console.log("password pattern doesn't match")
+                password.style.border = "3px red solid"
+                valid = false;
+
+
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>
