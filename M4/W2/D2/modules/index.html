@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="div1"></div>
+
+  <script type="module">
+    import { name, age, ar } from "./module1.js";
+    import message from "./usemodule.js";
+    //import {message} from "./usemodule.js";
+
+    console.log("Name is ", name);
+
+    let div1 = document.querySelector("#div1");
+    div1.innerHTML = "Name is " + name + " and age is " + age;
+
+    console.log("array is ", ar);
+
+    console.log(message());
+
+    // calculator.js= add,sub,
+
+    // index.html = form
+
+    /* enter first Number
+    enter second Number
+
+    add sub multiply division
+
+    The result is: */
+
+  </script>
+</body>
+
+</html>
