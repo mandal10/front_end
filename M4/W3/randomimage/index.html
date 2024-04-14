@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+
+<body>
+    <div>
+        <img src="img1.jpg" alt="">
+        <button id="btn">change image</button>
+    </div>
+    <script>
+
+        let btn = document.getElementById("btn");
+
+
+        btn.addEventListener("click", function () {
+            let array = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.png", "img6.jpg", "img7.jpg", "img8.jpg", "img8.jpg", "img9.jpg"];
+
+            let randomImage = array[(Math.floor(Math.random() * array.length))];
+
+            console.log(randomImage)
+
+            let image = document.querySelector("img")
+
+
+            image.src = randomImage;
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
