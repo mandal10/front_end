@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="firstnumber">
+    <input type="text" name="" id="secondnumber">
+    <br>
+    <br>
+    <p id="res"></p>
+    <button id="plus">add</button>
+    <button id="sub1">subtract</button>
+    <button id="mul1">multiply</button>
+    <button id="divide1">divide</button>
+
+
+
+    <script type="module">
+        let n1 = document.getElementById("firstnumber");
+        let n2 = document.getElementById("secondnumber");
+        let res = document.getElementById("res");
+        let plus = document.getElementById("plus");
+
+        import { add, sub, divide, multiply } from "./cal.js";
+
+        plus.addEventListener("click", function () {
+            res.innerHTML = add(n1.value, n2.value)
+        })
+
+
+        sub1.addEventListener("click", function () {
+            res.innerHTML = sub(n1.value, n2.value)
+        })
+
+        mul1.addEventListener("click", function () {
+            res.innerHTML = divide(n1.value, n2.value)
+        })
+
+        divide1.addEventListener("click", function () {
+            res.innerHTML = multiply(n1.value, n2.value)
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
