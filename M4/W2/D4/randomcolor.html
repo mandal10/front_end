@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> This is a heading</h1>
+
+    <button onmouseover="pickcolor()" onmouseout="f1()">click to change color</button>
+
+    <script>
+
+
+        // Random number from 0-10
+
+        // let num = Math.floor(Math.random() * 11)
+        // console.log(num);
+
+        function f1() {
+
+            var heading = document.querySelector("h1");
+            heading.style.color = "black";
+        }
+
+
+        function pickcolor() {
+
+            var colors = ["red", "blue", "green", "teal", "tan", "lightblue", "darkgreen", "#FA8072", "#E9967A", "#DFFF00"];
+            let random_color = colors[(Math.floor(Math.random() * colors.length))];
+            console.log(random_color);
+
+
+            var heading = document.querySelector("h1");
+            heading.style.color = random_color;
+
+
+        }
+    </script>
+</body>
+
+</html>
